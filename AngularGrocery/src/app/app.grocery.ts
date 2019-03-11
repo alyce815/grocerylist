@@ -6,3 +6,16 @@ import {  Component } from '@angular/core';
         '../assets/css/bootstrap.min.css'
     ]
 })
+export class GroceryComponent{
+    task: string;
+    tasks = [];
+
+    onClick(){
+        this.tasks.push(
+            {
+                name: this.task
+            }
+            )
+        this.task = "";
+    }
+}
